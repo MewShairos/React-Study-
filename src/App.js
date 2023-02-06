@@ -1,16 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Component } from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <h1>Hello World!</h1>
-    );
-  }
-}
-
-/*
 function App() {
   return (
     <div className="App">
@@ -31,6 +21,6 @@ function App() {
     </div>
   );
 }
-*/
+
 
 export default App;
