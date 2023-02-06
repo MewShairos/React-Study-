@@ -27,11 +27,8 @@ class App extends Component {
     const postsAndPhotos = postsJson.map((post, index) => {
       return { ...post, cover: photosJson[index].url }
     });
-
     this.setState({ posts: postsAndPhotos });
   }
-
-
 
   render() {
     const { posts } = this.state;
