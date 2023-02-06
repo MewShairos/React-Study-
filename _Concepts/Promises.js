@@ -1,3 +1,4 @@
+//Concept
 const myPromise = new Promise((resolve, reject) => {
 
   const nome = "Matheus";
@@ -14,9 +15,7 @@ myPromise.then((data) => {
   console.log(data)
 })
 
-
-//Encadeamento de Then's
-
+//Then's
 const myPromise2 = new Promise((resolve, reject) => {
 
   const nome = "Matheus";
@@ -35,8 +34,7 @@ myPromise2.then((data) => {
   console.log(StringModificada)
 }))
 
-// Retorna do Catch
-
+// Catch
 const myPromise3 = new Promise((resolve, reject) => {
 
   const nome = "João";
@@ -55,8 +53,7 @@ myPromise3.then((data) => {
   console.log("Aconteceu um erro:" + err)
 })
 
-// Resolver várias Promessas 
-
+// Promise All 
 const p1 = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("p1 Ok!")
@@ -76,8 +73,7 @@ const ResolveAll = Promise.all([p1, p2, p3]).then((data) => {
   console.log(data)
 })
 
-// Modo Race
-
+// Promise Race
 const p4 = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("p4 Ok!")
@@ -98,8 +94,7 @@ const ResolveAllRace = Promise.race([p4, p5, p6]).then((data) => {
 })
 
 
-// Fetch API request GitHub - - - - - Retorna uma promessa... 
-
+// Fetch API request GitHub - - - Return promise... 
 const username = "MewShairos"
 
 fetch(`https://api.github.com/users/${username}`, {

@@ -1,5 +1,4 @@
 // Concept 
-
 function First() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -20,7 +19,6 @@ async function Second() {
 Second();
 
 // Example
-
 function getUser(id) {
   return fetch(`https://reqres.in/api/users=?id=${id}`)
     .then(response => response.json())
